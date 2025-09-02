@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- OWL LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONT LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <!-- CSS LNK -->
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <header class="relative">
+      <section class="fixed top-0 right-0 left-0 hidden md:block z-50">
+        <div class="bg-primary-900 py-2 px-6 lg:px-16">
+          <div class="container text-white flex justify-between items-center">
+            <time
+              class="text-[12px] font-semibold leading-[15px] tracking-[-2%] text-white"
+              >Working Time: Mon - Thu 9:00 AM - 5:00 PM</time
+            >
+            <div class="flex gap-9 justify-center">
+              <div class="flex justify-between items-center gap-1.5">
+                <i class="fa-regular fa-envelope"></i>
+                <p
+                  class="text-[12px] font-semibold leading-[15px] tracking-[-2%] text-white"
+                >
+                  info@template.com
+                </p>
+              </div>
+              <div class="flex justify-between items-center gap-1.5">
+                <i class="fa-solid fa-phone"></i>
+                <p
+                  class="text-[12px] font-semibold leading-[15px] tracking-[-2%] text-white"
+                >
+                  + (100) 234-5678
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2.5 justify-center text-primary-900">
+              <div
+                class="w-5 h-5 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.facebook.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-facebook-f text-[12px]"></i>
+                </a>
+              </div>
+              <div
+                class="w-5 h-5 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.instagram.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-instagram text-[12px]"></i>
+                </a>
+              </div>
+              <div
+                class="w-5 h-5 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.twitter.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-twitter text-[12px]"></i
+                ></a>
+              </div>
+              <div
+                class="w-5 h-5 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.whatsapp.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-whatsapp text-[12px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav
+        class="fixed top-0 md:top-9 right-0 left-0 bg-white border-gray-200 dark:bg-gray-200 dark:border-gray-700 p-2 lg:px-12 md:py-0 md:px-0 z-50"
+      >
+        <div class="flex flex-wrap items-center justify-between p-4">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./assets/imgs/logo.png" alt="Flowbite Logo" />
+            <h4
+              class="self-center text-2xl font-bold text-[24px] leading-[30px] tracking-[-2%] whitespace-nowrap"
+            >
+              House<span class="text-primary-500">Fix</span>
+            </h4>
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex justify-center items-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:text-black dark:bg-gray-200 md:dark:bg-gray-200 md:dark:text-black dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  id="homeLink"
+                  data-dropdown-toggle="home"
+                  class="flex items-center justify-between font-semibold text-[14px] leading-[18px] tracking-normal py-2 px-3 text-primary-500 bg-transparent rounded-sm md:bg-transparent md:text-primary-700 sm:text-black md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:md:text-primary-700 dark:text-black md:dark:hover:text-primary-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-200 md:dark:hover:bg-transparent"
+                >
+                  Home
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  id="BlogLink"
+                  data-dropdown-toggle="Blog"
+                  class="flex items-center justify-between font-semibold text-[14px] leading-[18px] tracking-normal py-2 px-3 text-black bg-grat-200 rounded-sm md:bg-transparent sm:text-black md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-primary-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-200 md:dark:hover:bg-transparent"
+                >
+                  Blog
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  id="Blog"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#price"
+                  id="pagesLink"
+                  data-dropdown-toggle="pages"
+                  class="flex items-center justify-between font-semibold text-[14px] leading-[18px] tracking-normal py-2 px-3 text-black bg-grat-200 rounded-sm md:bg-transparent sm:text-black md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-primary-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-200 md:dark:hover:bg-transparent"
+                >
+                  Price
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  id="pages"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between font-semibold text-[14px] leading-[18px] tracking-normal py-2 px-3 text-black bg-grat-200 rounded-sm md:bg-transparent sm:text-black md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto dark:text-black md:dark:hover:text-primary-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-200 md:dark:hover:bg-transparent"
+                >
+                  Contact Us
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </a>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="mt-10 md:mt-0">
+                <a
+                  href="#contact"
+                  class="lg:px-[40px] px-[40px] md:px-[20px] py-[20px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white bg-primary-500 rounded-[4px] hover:bg-primary-600 hover:py-[19px] hover:px-[39px] hover:border-[1px] hover:rounded-[4px] hover:border-primary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-800 hover:dark:bg-primary-700 hover:dark:border-primary-800"
+                >
+                  Schedule a Call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--! hero -->
+    <section
+      class="bg-[url(../assets/imgs/hero-bg.jpg)] bg-cover bg-center bg-no-repeat mt-[90px] lg:mt-[107px] pt-20 h-[877px] md-[1129px] lg:h-[730px] text-center lg:text-start relative"
+    >
+      <div
+        class="container mt-[-17px] px-16 mx-auto flex justify-center items-center flex-col lg:flex-row"
+      >
+        <!-- hero disc -->
+        <div class="bg-transparent w-[380px] md:w-[636px] rounded-lg">
+          <a href="#">
+            <h1
+              class="mb-10 text-3xl md:text-5xl font-extrabold tracking-[-2] leading-[58px] text-white"
+            >
+              Plumbing Experts Right at Your Doorstep
+            </h1>
+          </a>
+          <p class="mb-10 text-[18px] leading-[23px] tracking-[-2%] text-white">
+            Our plumbers are the most recognized professionals globally because
+            we’re committed to excellent service, and nothing wears on
+            homeowners like the idea of handling plumbing problems.
+          </p>
+          <div
+            class="w-full mb-10 flex gap-5 justify-center lg:justify-start flex-col md:flex-row"
+          >
+            <a
+              href="#"
+              class="px-[40px] py-[20px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white bg-primary-500 rounded-[4px] hover:bg-transparent hover:py-[19px] hover:px-[39px] hover:border-[1px] hover:rounded-[4px] hover:border-primary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-800 hover:dark:border-primary-800"
+            >
+              Request a Job Estimate
+            </a>
+            <a
+              href="#"
+              class="px-[39px] py-[19px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white bg-transparent border-[1px] rounded-[4px] border-primary-500 dark:border-primary-800 hover:bg-primary-500 dark:hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:dark:border-primary-800"
+            >
+              Pricing Plans
+            </a>
+          </div>
+        </div>
+        <!-- hero photo -->
+        <div
+          class="absolute bottom-0 w-[260px] md:w-[360px] lg:relative lg:w-[504px]"
+        >
+          <img class="w-full" src="./assets/imgs/hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--! services -->
+    <section
+      class="bg-white dark:bg-gray-200 mg:py-20 py-[60px] lg:px-16 md:px-8 px-5"
+    >
+      <div class="container mx-auto text-white">
+        <!--? service heading -->
+        <div class="text-center pb-5">
+          <h5
+            class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+          >
+            Services We Provide
+            <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+          </h5>
+          <h1
+            class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+          >
+            The Best Plumbing Service & Maintanence
+          </h1>
+        </div>
+        <!--? services cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-primary-500 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-500"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 1.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-white dark:text-white"
+                >
+                  Plumbing Installation
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-white dark:text-gray-200">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-primary-50 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-900"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 2.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 2.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-neutral-900 dark:text-white"
+                >
+                  General Plumbing
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-neutral-900 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-neutral-900"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-primary-50 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-900"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 3.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 3.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-neutral-900 dark:text-white"
+                >
+                  Plumbing Maintanence
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-neutral-900 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-neutral-900"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-primary-50 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-900"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 4.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 4.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-neutral-900 dark:text-white"
+                >
+                  Fixing Pipes
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-neutral-900 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-neutral-900"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-primary-50 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-900"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 5.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 5.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-neutral-900 dark:text-white"
+                >
+                  Plumbing Line Consultation
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-neutral-900 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-neutral-900"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-primary-50 border border-gray-200 rounded-[4px] shadow-sm dark:bg-primary-900"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-[4px]"
+                src="./assets/imgs/service card 6.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-4">
+              <div class="mb-4">
+                <img src="./assets/imgs/service icon 6.png" alt="" />
+              </div>
+              <a href="#">
+                <h4
+                  class="mb-4 text-[20px] font-bold tracking-[-2%] leading-6 text-neutral-900 dark:text-white"
+                >
+                  Drain Cleaning
+                </h4>
+              </a>
+              <p class="mb-4 font-normal text-neutral-900 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur. Cursus viverra est
+                tristique vitae velit odio in. Velit vestibulum porttitor vel
+                lectus velit condimentum.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center py-2 text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-neutral-900"
+              >
+                Read more
+                <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! about us -->
+    <section
+      class="py-[60px] md:py-[80px] lg:py-[100px] px-[20px] md:px-[32px] lg:px-[64px] dark:bg-gray-200"
+    >
+      <div class="container flex flex-col lg:flex-row gap-10">
+        <!--? about us img -->
+        <div
+          class="w-[271px] md:w-[456px] lg:w-[442px] h-[280px] md:h-[470px] lg:h-[456px] hover:bg-transparent group/aboutImg transition-all rounded-[4px] bg-primary-500 lg:ms-5 ms-10 relative dark:bg-primary-800"
+        >
+          <img
+            class="w-full absolute top-[-20px] left-[-20px] group-hover/aboutImg:top-[0px] transition-all group-hover/aboutImg:left-[0px] border-2 rounded-[4px] border-primary-500 dark:border-primary-800"
+            src="./assets/imgs/about us img.jpg"
+            alt=""
+          />
+        </div>
+
+        <!--? about us disc -->
+        <div class="w-fit lg:w-[676px]">
+          <h1
+            class="mb-10 font-bold text-[40px] leading-[48px] tracking-[-2%] text-primary-800"
+          >
+            Taking regular plumbing care will save you time and money
+          </h1>
+          <p
+            class="mb-10 font-normal text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco
+          </p>
+          <ul class="mb-10">
+            <li class="flex gap-2.5 items-center mb-[10px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[10px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[10px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="px-[28px] py-[20px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white bg-primary-500 rounded-[4px] hover:bg-transparent hover:py-[19px] hover:px-[27px] hover:border-[1px] hover:rounded-[4px] hover:text-primary-800 hover:border-primary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-all dark:bg-primary-800 hover:dark:border-primary-800"
+          >
+            More About Us
+            <i class="fa-solid fa-location-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--! Pricing Plans -->
+    <section
+      id="price"
+      class="bg-primary-50 dark:bg-gray-200 md:py-20 py-[60px] lg:px-16 md:px-8 px-5"
+    >
+      <!--? Pricing Plans heading -->
+      <div class="text-center pb-5">
+        <h5
+          class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+        >
+          Pricing Plans
+          <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+        </h5>
+        <h1
+          class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+        >
+          Affordable Pricing Plans
+        </h1>
+        <!-- toggel -->
+        <div class="flex justify-between items-center w-fit gap-2 mx-auto">
+          <span>Monthly</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" checked />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
+            ></div>
+          </label>
+          <span>Annual</span>
+        </div>
+      </div>
+      <!-- price cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div
+          class="bg-white flex flex-col w-full gap-[40px] border-transparent p-10 rounded-md border-y-8 hover:border-y-primary-500 dark:hover:border-y-primary-800 transition-all"
+        >
+          <h4
+            class="font-bold text-2xl leading-[30px] tracking-[-2%] text-primary-800"
+          >
+            Residential Plumbing
+          </h4>
+          <p
+            class="text-5xl font-bold leading-[58px] tracking-[-2%] text-primary-500"
+          >
+            $199<sub class="text-[18px] leading-[23px] text-primary-800"
+              >/Month</sub
+            >
+          </p>
+          <ul class="">
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="px-[39px] py-[15px] w-[200px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-primary-800 hover:text-primary-50 bg-transparent border-[1px] rounded-[4px] border-primary-500 dark:border-primary-800 hover:bg-primary-500 dark:hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:dark:border-primary-800"
+          >
+            Pricing Plans
+          </a>
+        </div>
+        <div
+          class="bg-white flex flex-col w-full gap-[40px] border-transparent p-10 rounded-md border-y-8 hover:border-y-primary-500 dark:hover:border-y-primary-800 transition-all"
+        >
+          <h4
+            class="font-bold text-2xl leading-[30px] tracking-[-2%] text-primary-800"
+          >
+            Residential Plumbing
+          </h4>
+          <p
+            class="text-5xl font-bold leading-[58px] tracking-[-2%] text-primary-500"
+          >
+            $199<sub class="text-[18px] leading-[23px] text-primary-800"
+              >/Month</sub
+            >
+          </p>
+          <ul class="">
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="px-[39px] py-[15px] w-[200px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-primary-800 hover:text-primary-50 bg-transparent border-[1px] rounded-[4px] border-primary-500 dark:border-primary-800 hover:bg-primary-500 dark:hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:dark:border-primary-800"
+          >
+            Pricing Plans
+          </a>
+        </div>
+        <div
+          class="bg-white flex flex-col w-full gap-[40px] border-transparent p-10 rounded-md border-y-8 hover:border-y-primary-500 dark:hover:border-y-primary-800 transition-all"
+        >
+          <h4
+            class="font-bold text-2xl leading-[30px] tracking-[-2%] text-primary-800"
+          >
+            Residential Plumbing
+          </h4>
+          <p
+            class="text-5xl font-bold leading-[58px] tracking-[-2%] text-primary-500"
+          >
+            $199<sub class="text-[18px] leading-[23px] text-primary-800"
+              >/Month</sub
+            >
+          </p>
+          <ul class="">
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Praesent Sodales Orci
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center mb-[26px]">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Curabitur Dignissim
+              </p>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <img class="w-5 h-5" src="./assets/imgs/check.png" alt="" />
+              <p
+                class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-800"
+              >
+                Nulla Condimentum
+              </p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="px-[39px] py-[15px] w-[200px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-primary-800 hover:text-primary-50 bg-transparent border-[1px] rounded-[4px] border-primary-500 dark:border-primary-800 hover:bg-primary-500 dark:hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:dark:border-primary-800"
+          >
+            Pricing Plans
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--! our work -->
+    <section class="dark:bg-gray-200 md:py-20 py-[60px] lg:px-16 md:px-8 px-5">
+      <!--? our work heading -->
+      <div class="text-center pb-5">
+        <h5
+          class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+        >
+          Featured Projects <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+        </h5>
+        <h1
+          class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+        >
+          Our Recent Works
+        </h1>
+      </div>
+
+      <!--? taps -->
+      <div class="flex justify-center items-center">
+        <ul class="flex gap-7 flex-wrap justify-center">
+          <li class="bb text-[14px] lg:text-[20px]">All Products</li>
+          <li class="bb text-[14px] lg:text-[20px]">Commercial Service</li>
+          <li class="bb text-[14px] lg:text-[20px]">Residentail Services</li>
+          <li class="bb text-[14px] lg:text-[20px]">Energency Services</li>
+        </ul>
+      </div>
+
+      <!--! work card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 my-5">
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work1.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work2.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work3.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work4.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work5.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[500px]" src="./assets/imgs/work6.jpg" alt="" />
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 transition-all flex justify-center items-center flex-col text-white"
+          >
+            <h4
+              class="border-b-2 border-primary-500 p-1 w-fit text-[24px] leading-[30px] tracking-[-2%] font-bold"
+            >
+              Water Line Repier
+            </h4>
+            <p class="text-[14px] leading-[18px] tracking-[0%]">Plumping</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! counter -->
+    <section
+      class="bg-primary-50 dark:bg-gray-200 md:py-20 py-[60px] lg:px-16 md:px-8 px-5"
+    >
+      <h2
+        class="font-bold text-[36px] leading-[44px] tracking-[-2%] text-primary-500 text-center"
+      >
+        Providing excellent services for the last 25 years
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5">
+        <div class="flex justify-center items-center gap-5 mb-2.5 lg:mb-0">
+          <img src="./assets/imgs/counter icon2.png" alt="" />
+          <div>
+            <h2
+              class="font-bold text-[32px] leading-[40px] tracking-[-2%] text-primary-800"
+            >
+              1200<span class="text-primary-500">+</span>
+            </h2>
+            <p
+              class="text-primary-800 font-semibold text-[16px] leading-[20px] tracking-[-2%]"
+            >
+              Happy Customers
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-5 mb-2.5 lg:mb-0">
+          <img src="./assets/imgs/counter icon1.png" alt="" />
+          <div>
+            <h2
+              class="font-bold text-[32px] leading-[40px] tracking-[-2%] text-primary-800"
+            >
+              8714<span class="text-primary-500">+</span>
+            </h2>
+            <p
+              class="text-primary-800 font-semibold text-[16px] leading-[20px] tracking-[-2%]"
+            >
+              Installed Units
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-5 mb-2.5 lg:mb-0">
+          <img src="./assets/imgs/counter icon3.png" alt="" />
+          <div>
+            <h2
+              class="font-bold text-[32px] leading-[40px] tracking-[-2%] text-primary-800"
+            >
+              1600<span class="text-primary-500">+</span>
+            </h2>
+            <p
+              class="text-primary-800 font-semibold text-[16px] leading-[20px] tracking-[-2%]"
+            >
+              Home Served
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-5 mb-2.5 lg:mb-0">
+          <img src="./assets/imgs/counter icon4.png" alt="" />
+          <div>
+            <h2
+              class="font-bold text-[32px] leading-[40px] tracking-[-2%] text-primary-800"
+            >
+              500<span class="text-primary-500">+</span>
+            </h2>
+            <p
+              class="text-primary-800 font-semibold text-[16px] leading-[20px] tracking-[-2%]"
+            >
+              Professional
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! testimonial -->
+    <section class="dark:bg-gray-200 md:py-20 py-[100px] lg:px-16 md:px-8 px-5">
+      <!--? testimonial heading -->
+      <div class="text-center mb-[60px]">
+        <h5
+          class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+        >
+          Customer Testimonial <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+        </h5>
+        <h1
+          class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+        >
+          Our Partner & Customer Give<br />The Best Review For Us
+        </h1>
+      </div>
+      <div class="owl-carousel">
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer2.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer3.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer1.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer2.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer3.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-b-[6px] border-primary-500 py-[40px] px-[24px] bg-primary-50"
+        >
+          <div>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+            <i class="fa-solid fa-star text-primary-500"></i>
+          </div>
+          <p
+            class="text-[16px] leading-[20px] tracking-[-2%] text-primary-800 my-5"
+          >
+            Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar
+            sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo
+            aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus
+            ut maecenas interdum. Euismod egestas scelerisque.
+          </p>
+          <div class="flex gap-4">
+            <img
+              class="!w-[60px] h-[60px] rounded-full"
+              src="./assets/imgs/customer1.png"
+              alt=""
+            />
+            <div>
+              <h4 class="mb-2">Michael Adam</h4>
+              <p>Hotel Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! partners -->
+    <section class="dark:bg-gray-200 md:py-20 py-[100px] lg:px-16 md:px-8 px-5">
+      <!--? partners heading -->
+      <div class="mb-[40px]">
+        <h5
+          class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+        >
+          Worked With <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+        </h5>
+        <h1
+          class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+        >
+          Our Partners
+        </h1>
+      </div>
+      <div class="px-10 grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto">
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner1.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner2.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner3.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner4.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner5.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner6.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner7.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center p-5">
+          <img src="./assets/imgs/partner8.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--! blog -->
+    <section
+      id="blog"
+      class="dark:bg-gray-200 md:py-20 py-[100px] lg:px-16 md:px-8 px-5 bg-primary-50"
+    >
+      <!--? blog heading -->
+      <div class="mb-[40px]">
+        <h5
+          class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-500 pb-3.5"
+        >
+          Our Blog <i class="ms-2 fa-solid fa-arrow-right-long"></i>
+        </h5>
+        <h1
+          class="font-bold text-[40px] leading-[48px] tracking-[-2%] align-middle text-primary-800 pb-3.5"
+        >
+          Emergency Tips & Tricks
+        </h1>
+        <p class="text-[18px] leading-[23px] tracking-[-2%] text-primary-800">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          semper placerat metus.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 w-full md:grid-cols-2 rounded-sm">
+          <div
+            class="w-full lg:w-[284px] h-[226px] group/img bg-[url(../assets/imgs/work7.png)] rounded-sm bg-cover mb-2 bg-white dark:bg-primary-50 flex items-end"
+          >
+            <button
+              class="opacity-0 group-hover/img:opacity-100 transition-all px-3 py-2 bg-primary-500 text-white dark:bg-primary-800 dark:text-white hover:bg-primary-600 dark:hover:bg-primary-500"
+            >
+              Tips & Tricks
+            </button>
+          </div>
+          <div
+            class="w-full lg:w-[284px] h-[226px] p-5 bg-white dark:bg-primary-50 rounded-e-sm"
+          >
+            <h4
+              class="text-[20px] leading-[24px] tracking-[-2%] font-bold text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain
+            </h4>
+            <p
+              class="text-primary-500 text-[14px] font-semibold leading-[18px] my-4"
+            >
+              <i class="fa-solid fa-calendar-days"></i> January 4, 2022
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain Lorem ipsum dolor
+              sit amet consectetur
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-500 my-4"
+            >
+              Read More
+              <i class="fa-solid fa-location-arrow"></i>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 w-full md:grid-cols-2 rounded-sm">
+          <div
+            class="w-full lg:w-[284px] h-[226px] group/img bg-[url(../assets/imgs/servicecard2.jpg.jpg)] rounded-sm bg-cover mb-2 bg-white dark:bg-primary-50 flex items-end"
+          >
+            <button
+              class="opacity-0 group-hover/img:opacity-100 transition-all px-3 py-2 bg-primary-500 text-white dark:bg-primary-800 dark:text-white hover:bg-primary-600 dark:hover:bg-primary-500"
+            >
+              Tips & Tricks
+            </button>
+          </div>
+          <div
+            class="w-full lg:w-[284px] h-[226px] p-5 bg-white dark:bg-primary-50 rounded-e-sm"
+          >
+            <h4
+              class="text-[20px] leading-[24px] tracking-[-2%] font-bold text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain
+            </h4>
+            <p
+              class="text-primary-500 text-[14px] font-semibold leading-[18px] my-4"
+            >
+              <i class="fa-solid fa-calendar-days"></i> January 4, 2022
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain Lorem ipsum dolor
+              sit amet consectetur
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-500 my-4"
+            >
+              Read More
+              <i class="fa-solid fa-location-arrow"></i>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 w-full md:grid-cols-2 rounded-sm">
+          <div
+            class="w-full lg:w-[284px] h-[226px] group/img bg-[url(../assets/imgs/servicecard1.jpg)] rounded-sm bg-cover mb-2 bg-white dark:bg-primary-50 flex items-end"
+          >
+            <button
+              class="opacity-0 group-hover/img:opacity-100 transition-all px-3 py-2 bg-primary-500 text-white dark:bg-primary-800 dark:text-white hover:bg-primary-600 dark:hover:bg-primary-500"
+            >
+              Tips & Tricks
+            </button>
+          </div>
+          <div
+            class="w-full lg:w-[284px] h-[226px] p-5 bg-white dark:bg-primary-50 rounded-e-sm"
+          >
+            <h4
+              class="text-[20px] leading-[24px] tracking-[-2%] font-bold text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain
+            </h4>
+            <p
+              class="text-primary-500 text-[14px] font-semibold leading-[18px] my-4"
+            >
+              <i class="fa-solid fa-calendar-days"></i> January 4, 2022
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain Lorem ipsum dolor
+              sit amet consectetur
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-500 my-4"
+            >
+              Read More
+              <i class="fa-solid fa-location-arrow"></i>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 w-full md:grid-cols-2 rounded-sm">
+          <div
+            class="w-full lg:w-[284px] h-[226px] group/img bg-[url(../assets/imgs/servicecard3.jpg)] rounded-sm bg-cover mb-2 bg-white dark:bg-primary-50 flex items-end"
+          >
+            <button
+              class="opacity-0 group-hover/img:opacity-100 transition-all px-3 py-2 bg-primary-500 text-white dark:bg-primary-800 dark:text-white hover:bg-primary-600 dark:hover:bg-primary-500"
+            >
+              Tips & Tricks
+            </button>
+          </div>
+          <div
+            class="w-full lg:w-[284px] h-[226px] p-5 bg-white dark:bg-primary-50 rounded-e-sm"
+          >
+            <h4
+              class="text-[20px] leading-[24px] tracking-[-2%] font-bold text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain
+            </h4>
+            <p
+              class="text-primary-500 text-[14px] font-semibold leading-[18px] my-4"
+            >
+              <i class="fa-solid fa-calendar-days"></i> January 4, 2022
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-800"
+            >
+              The Do’s and Don’ts of Fixing a Blocked Drain Lorem ipsum dolor
+              sit amet consectetur
+            </p>
+            <p
+              class="text-[14px] leading-[18px] tracking-[-2%] text-primary-500 my-4"
+            >
+              Read More
+              <i class="fa-solid fa-location-arrow"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center p-10">
+        <a
+          href="#"
+          class="px-[40px] py-[20px] text-[18px] font-bold leading-[23px] tracking-[-2%] text-center text-white hover:text-primary-800 bg-primary-500 rounded-[4px] hover:bg-transparent hover:py-[19px] hover:px-[39px] hover:border-[1px] hover:rounded-[4px] hover:border-primary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-800 hover:dark:border-primary-800"
+        >
+          See More Blogs <i class="fa-solid fa-location-arrow"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer
+      class="bg-neutral-900 pt-[80px] lg:pt-[100px] pb-[32px] px-5 md:px-[32px] lg:px-[64px]"
+    >
+      <div
+        id="contact"
+        class="flex lg:justify-between items-start lg:items-center flex-col lg:flex-row flex-wrap"
+      >
+        <h1
+          class="text-[36px] lg:text-[48px] font-bold leading-[58px] tracking-[-2%] text-white"
+        >
+          Contact us to get a quotation.
+        </h1>
+        <button
+          class="rounded-sm py-[19px] px-[40px] bg-secondary-500 hover:bg-secondary-600 text-white mt-10 lg:mt-0"
+        >
+          Contact Us
+        </button>
+      </div>
+      <hr class="bg-neutral-800 my-10" />
+      <div class="flex justify-between flex-col-reverse lg:flex-row">
+        <div class="w-[700px] flex justify-between flex-col lg:flex-row">
+          <!-- contact -->
+          <div class="w-fit flex flex-col gap-5 mb-10 lg:mb-0">
+            <h5
+              class="font-bold text-[18px] leading-[23px] tracking-[-2%] text-primary-50"
+            >
+              Contact
+            </h5>
+            <div class="flex text-primary-50 items-center gap-5">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="leading-[18px] tracking-[-2%]">
+                3249 Henery Street, Kansas <br />
+                67204
+              </p>
+            </div>
+            <div class="flex text-primary-50 items-center gap-5">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="leading-[18px] tracking-[-2%]">info@template.com</p>
+            </div>
+            <div class="flex text-primary-50 items-center gap-5">
+              <i class="fa-solid fa-phone"></i>
+              <p class="leading-[18px] tracking-[-2%]">+ (100) 234-5678</p>
+            </div>
+            <p
+              class="font-semibold text-[18px] leading-[23px] tracking-[-2%] text-primary-50"
+            >
+              Emergency 24/7 Service
+            </p>
+            <div class="flex text-primary-50 items-center gap-5">
+              <i class="fa-solid fa-phone text-secondary-500"></i>
+              <p class="leading-[18px] tracking-[-2%]">+1-800-777-584</p>
+            </div>
+            <div
+              class="flex gap-2.5 justify-start text-primary-900 mt-[20px] lg:mt-[35px]"
+            >
+              <div
+                class="w-8 h-8 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.facebook.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-facebook-f text-[18px]"></i>
+                </a>
+              </div>
+              <div
+                class="w-8 h-8 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.instagram.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-instagram text-[18px]"></i>
+                </a>
+              </div>
+              <div
+                class="w-8 h-8 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.twitter.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-twitter text-[18px]"></i
+                ></a>
+              </div>
+              <div
+                class="w-8 h-8 rounded-4xl bg-white flex justify-center items-center"
+              >
+                <a
+                  href="https://www.whatsapp.com/"
+                  class="flex justify-center items-center"
+                >
+                  <i class="fa-brands fa-whatsapp text-[18px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- navigate -->
+          <div class="w-fit flex flex-col gap-5 text-primary-50 mb-10 lg:mb-0">
+            <h5 class="font-bold text-[18px] leading-[23px] tracking-[-2%]">
+              Navigation
+            </h5>
+            <p class="leading-[18px] tracking-[-2%]"><a href="">Home</a></p>
+            <p class="leading-[18px] tracking-[-2%]"><a href="">Services</a></p>
+            <p class="leading-[18px] tracking-[-2%]"><a href="">Blog</a></p>
+            <p class="leading-[18px] tracking-[-2%]"><a href="">Our Team</a></p>
+            <p class="leading-[18px] tracking-[-2%]">
+              <a href="">Contact Us</a>
+            </p>
+          </div>
+          <!-- template -->
+          <div class="w-fit flex flex-col gap-5 text-primary-50">
+            <h5 class="font-bold text-[18px] leading-[23px] tracking-[-2%]">
+              Template
+            </h5>
+            <p class="leading-[18px] tracking-[-2%]">404</p>
+            <p class="leading-[18px] tracking-[-2%]">Login</p>
+            <p class="leading-[18px] tracking-[-2%]">Licenses</p>
+            <p class="leading-[18px] tracking-[-2%]">StyleGuide</p>
+            <p class="leading-[18px] tracking-[-2%]">Changelog</p>
+          </div>
+        </div>
+        <div
+          class="w-full mb-10 lg:mb-0 lg:w-[330px] flex flex-col gap-[15px] text-primary-50"
+        >
+          <h2 class="font-semibold text-[32px] leading-[40px] tracking-[-2%]">
+            Newsletter
+          </h2>
+          <p class="leading-[18px] tracking-[-2%]">
+            Get the latest tips and tricks, updates, offers and discount right
+            into your mailbox.
+          </p>
+          <form>
+            <input
+              type="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-primary-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="name@mail.com"
+              required
+            />
+            <button
+              class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-800 hover:dark:bg-primary-700 font-bold text-[16px] leading-[20px] tracking-[-2%] py-[14px] px-[32px] rounded-sm w-full mt-[15px]"
+            >
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="bg-neutral-800 my-10" />
+      <div class="flex justify-between text-primary-50 flex-col md:flex-row">
+        <p
+          class="leading-[15px] tracking-[-2%] text-center md:text-start text-[10px] lg:text-[12px]"
+        >
+          © Copyright 2025 by Housefix. Designed & Developed by Hexwaave.
+          Powered by Webflow
+        </p>
+        <div class="flex gap-5 justify-center md:justify-start mt-5 md:mt-0">
+          <p class="leading-[15px] tracking-[-2%] text-[10px] lg:text-[12px]">
+            Privacy & Police
+          </p>
+          <p class="leading-[15px] tracking-[-2%] text-[10px] lg:text-[12px]">
+            Terms & Conditions
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/flowbite.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

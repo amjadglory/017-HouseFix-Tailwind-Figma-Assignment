@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "@tailwindcss/cli": "^4.1.12",
+    "flowbite": "^3.1.2",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
+    "pagedone": "^1.2.2",
+    "tailwindcss": "^4.1.12"
+  },
+  "scripts": {
+    "tail": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+  }
+}

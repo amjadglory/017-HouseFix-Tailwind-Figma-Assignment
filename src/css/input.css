@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@theme {
+  --breakpoint-dt: 992px;
+  --breakpoint-tap: 768px;
+  --breakpoint-mob: 320px;
+  --color-neutral-50: #f5f6f9;
+  --color-neutral-100: #e6e9f0;
+  --color-neutral-200: #d7dbe6;
+  --color-neutral-300: ##c9cedd;
+  --color-neutral-400: #bac1d4;
+  --color-neutral-500: #9ba6c1;
+  --color-neutral-600: #818eb0;
+  --color-neutral-700: #546286;
+  --color-neutral-800: #323b50;
+  --color-neutral-900: #11141b;
+
+  --color-primary-50: #f4f8ff;
+  --color-primary-100: #deeaff;
+  --color-primary-200: #bcd6ff;
+  --color-primary-300: #9bc1ff;
+  --color-primary-400: #7aadff;
+  --color-primary-500: #2196f3;
+  --color-primary-600: #0060fc;
+  --color-primary-700: #0045b4;
+  --color-primary-800: #00296c;
+  --color-primary-900: #000e24;
+
+  --color-secondary-50: #fef4f5;
+  --color-secondary-100: #fddfe1;
+  --color-secondary-200: #fcc0c3;
+  --color-secondary-300: #faa0a5;
+  --color-secondary-400: #f88088;
+  --color-secondary-500: #f42c38;
+  --color-secondary-600: #f00c1a;
+  --color-secondary-700: #ab0913;
+  --color-secondary-800: #67050b;
+  --color-secondary-900: #220204;
+}
+
+ul,
+li {
+  height: fit-content;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+.bb {
+  @apply cursor-pointer border-b-2 border-transparent hover:border-primary-500 transition-all duration-75 p-2;
+}
+
+/* owl */
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  color: var(--color-primary-500);
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 40%;
+  bottom: -20px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: 40%;
+  bottom: -20px;
+}
+
+@media (min-width: 1280px) {
+  .owl-carousel .owl-nav button.owl-next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -35px;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+  }
+}
+
+.owl-carousel {
+  position: relative;
+}
